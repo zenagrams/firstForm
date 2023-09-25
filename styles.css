@@ -12,3 +12,36 @@
 .form_title{
     font-size: 2em;
 }
+
+.form_item{
+    display:flex;
+    flex-direction: column;
+}
+
+.form_item > * {
+    align-self: flex-start;
+}
+
+.form_label {
+    padding: 2px 0;
+}
+
+.form_input{
+    width:100%;
+    max-width:425px;
+
+    /*fix for Safari/IOS data fields*/
+    min-height: calc(0.9em + (0.8em * 2) + 0.4em);
+    /*font size plus padding of top and bottom  */
+    padding: 0.8em;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    outline:none;
+    border: 1px solid white;
+    border-radius:4px;
+    background: #f9f9f9;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+    /*smooth transition for any of these properties , specifically error messages*/
+
+}
+

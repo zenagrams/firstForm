@@ -2,6 +2,8 @@
 .form{
     font-family: sans-serif;
     font-size: 16px;
+    background-color: #ECEBC9;
+    padding:10px;
 }
 
 .form *{
@@ -23,7 +25,7 @@
 }
 
 .form_label {
-    padding: 2px 0;
+    padding: 5px 0;
 }
 
 .form_input{
@@ -37,11 +39,17 @@
     font-size: 0.9em;
     font-family: sans-serif;
     outline:none;
-    border: 1px solid white;
+    border: 1px solid #808080;
     border-radius:4px;
-    background: #f9f9f9;
+    background: #ededed;
     transition: background 0.25s, border-color 0.25s, color 0.25s;
     /*smooth transition for any of these properties , specifically error messages*/
-
 }
 
+.form_input:focus{/*focus is for when the person is typing in the box*/
+    background:white;
+}
+
+.form_input::placeholder {
+    
+}
